@@ -1,0 +1,34 @@
+.card {
+  width: 400px;
+  height: 480px;
+  background: #fff;
+  border: ridge;
+}
+
+.logo {
+  width: 80px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: spin infinite 10s linear;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-contents {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+  padding-top: 20px;
+}
